@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration 
+	DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"> -->
+
+<!-- In practice, using a PUBLIC declaration with a formal public identifier 
+	is preferred because it allows XML parsers to locate the DTD(Document Type 
+	Definition) file even if the system hosting the XML document is not connected 
+	to the internet. The SYSTEM declaration, on the other hand, relies on the 
+	availability of the DTD file at a specific URL. -->   
+	 
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/myhiber</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">admin</property>
+
+		<!-- Hibernate generates SQL statements that are compatible with the database.A 
+			dialect in Hibernate is a component that enables communication between Hibernate 
+			and a specific database by providing the necessary SQL syntax and configuration 
+			for generating database-specific SQL statements. -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!--telling hbm aboutcrreating tables and all, -->
+		<!-- create: Hibernate creates the schema from scratch, dropping any existing 
+			schema -->
+		<!-- update: Hibernate automatically updates the schema based on the mappings. -->
+		<!-- validate: Hibernate validates the schema, but does not make any changes 
+			to the database. It checks if the schema matches the mapping files and entity 
+			classes -->
+		<!-- none: Hibernate does not perform any schema management -->
+		<!-- -->
+
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		
+		<!-- Hibernate is being instructed to map the com.tut.Student class to a database table.This mapping allows Hibernate to manage the persistence of Student objects, including saving, updating, and retrieving them from the database.-->
+		<mapping class="com.tut.ProjectWithMaven.Student"/>
+
+	</session-factory>
+
+</hibernate-configuration>     

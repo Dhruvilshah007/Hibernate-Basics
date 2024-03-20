@@ -1,0 +1,7 @@
+@Entity - use to mark any class as Entity
+
+@Table  - use to change the table details
+
+@Id  - use to mark column as id(primary key)
+
+@GeneratedValue - hibernate will automatically generate values for that using an internal sequence.Therefore, we don't have to set it manually.

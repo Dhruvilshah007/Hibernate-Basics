@@ -1,0 +1,25 @@
+package com.tut.ProjectWithMaven;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import com.mysql.cj.xdevapi.SessionFactory;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		System.out.println("Project Started");
+		
+		//for saving thread safe object
+		
+		Configuration cfg=new Configuration();
+		cfg.configure();
+		SessionFactory factory=cfg.buildSessionFactory();
+		
+		//One liner
+//		SessionFactory factory= new Configuration().configure().buildSessionFactory();
+		
+		
+	}
+}

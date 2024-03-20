@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration 
+	DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"> -->
+
+<!-- In practice, using a PUBLIC declaration with a formal public identifier 
+	is preferred because it allows XML parsers to locate the DTD(Document Type 
+	Definition) file even if the system hosting the XML document is not connected 
+	to the internet. The SYSTEM declaration, on the other hand, relies on the 
+	availability of the DTD file at a specific URL. -->   
+	 
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/myhiber</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">admin</property>
+		
+		<!-- Hibernate generates SQL statements that are compatible with the database.A dialect in Hibernate is a component that enables communication between Hibernate and a specific database by providing the necessary SQL syntax and configuration for generating database-specific SQL statements. -->
+		<property name="dialect">admin</property>
+	</session-factory>
+
+</hibernate-configuration>     
