@@ -5,6 +5,10 @@
 @Id  - use to mark column as id(primary key)
 
 @GeneratedValue - hibernate will automatically generate values for that using an internal sequence.Therefore, we don't have to set it manually.
+			eg-	GenerationType.IDENTITY - Generate the primary key value by the database itself using the auto-increment column option
+				GenerationType.AUTO	-  This is a default strategy and the persistence provider which automatically selects an appropriate generation strategy based on the database usage
+				GenerationType.TABLE - This strategy uses a separate database table to generate primary key values. The persistence provider manages this table and uses it to allocate unique values for primary keys.
+				GenerationType.SEQUENCE - This generation-type strategy uses a database sequence to generate primary key values.
 
 @Column - Can be used to specify column mappings. For eg, to change column name in the associated table with dataabse
 
