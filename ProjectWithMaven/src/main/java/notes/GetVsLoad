@@ -1,0 +1,39 @@
+get()				
+1-It returns null if not found in cache as well as DB
+load()
+1-load() method throws ObjectNotFoundException if object is not found on Cache as well as DB,but never return null
+
+2-User get() if you are not sure that objects exists in db or not
+2-Use load() if you are sure that object exists
+
+
+3-get() involves DB hit if object doesn't exist in session cache and returns a fully initialized object which may involve several database call(Explanation: If data is not found in cache than only get() will checkin Database)
+3-load() method can return proxy in place and only initialize the object or hot that database if any method other than getId() is called on persistent or entity object.This lazy initialize increases performance(Explanation: So, here on calling load() it wont call intodatabase, but it will call into database when we use object.get... for eg stud.getName() so, here it will call/hit into database  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
