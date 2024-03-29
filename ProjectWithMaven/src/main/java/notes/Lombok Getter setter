@@ -1,0 +1,4 @@
+1) Add Lombok dependency in pom.xml
+2) Run lombok jar as Java app
+3) click on Install/Update
+4) Restart IDE esclipse

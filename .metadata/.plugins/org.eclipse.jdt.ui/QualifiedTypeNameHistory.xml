@@ -4,11 +4,8 @@
     <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
     <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="javax.persistence.Transient"/>
     <fullyQualifiedTypeName name="javax.persistence.Temporal"/>
     <fullyQualifiedTypeName name="javax.persistence.Lob"/>
@@ -21,4 +18,12 @@
     <fullyQualifiedTypeName name="com.tut.ProjectWithMaven.Certificate"/>
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="com.map.Question"/>
 </qualifiedTypeNameHistroy>
