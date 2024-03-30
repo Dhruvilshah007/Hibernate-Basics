@@ -37,7 +37,7 @@
 		<!-- -->
 
 
-		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 
 		<!-- Hibernate is being instructed to map the com.tut.Student class to 
@@ -48,9 +48,13 @@
 		<mapping class="com.tut.ProjectWithMaven.Address" />
 
 
-		<mapping class="com.map.Question" />
+		<mapping class="com.map.oneToOne.Question" />
+		<mapping class="com.map.oneToOne.Answer" />
 
-		<mapping class="com.map.Answer" />
+		<mapping class="com.map.oneToMany.Post" />
+		<mapping class="com.map.oneToMany.Comment" />
+
+
 
 	</session-factory>
 
