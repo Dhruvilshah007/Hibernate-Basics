@@ -54,6 +54,9 @@
 		<mapping class="com.map.oneToMany.Post" />
 		<mapping class="com.map.oneToMany.Comment" />
 
+		<mapping class="com.map.manyToMany.Emp" />
+		<mapping class="com.map.manyToMany.Project" />
+
 
 
 	</session-factory>
