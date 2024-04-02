@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import lombok.AllArgsConstructor;
@@ -25,6 +26,6 @@ public class Post {
 	private String post;
 	
 	//here as we added mappedBy="post" it wont create mapping table post_comment
-	@OneToMany(mappedBy = "post")
+	@OneToMany(mappedBy = "post",fetch = FetchType.EAGER)
 	private List<Comment> comments;
 }
