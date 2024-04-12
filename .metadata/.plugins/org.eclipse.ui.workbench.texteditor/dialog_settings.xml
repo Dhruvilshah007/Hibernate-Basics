@@ -6,8 +6,9 @@
 		<item key="wholeword" value="true"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="ManyToOne"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="**"/>
 			<item value="Question"/>
 			<item value="Post"/>
 			<item value="//"/>

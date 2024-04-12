@@ -2,6 +2,7 @@ package com.map.oneToMany;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -26,6 +27,6 @@ public class Post {
 	private String post;
 	
 	//here as we added mappedBy="post" it wont create mapping table post_comment
-	@OneToMany(mappedBy = "post",fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "post",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private List<Comment> comments;
 }
