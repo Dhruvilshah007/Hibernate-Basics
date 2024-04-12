@@ -1,0 +1,20 @@
+Caching in Hibernate
+
+Caching is a mechanism to enhance performance of a Application
+Cache is used to reduce number of database queries
+
+
+Use case
+
+->
+
+Java Application  Hibernate  Database
+
+Whenever Java app asks for any data from database hibernate check if it is in its cache,If is present than it doesn't make Database call and directly gives response, while if it is not present in cache
+it makes database call stores in cache and return object.
+
+
+Hibernate Caching
+
+1)First level caching(It is associated with session object.Data stores in session object)-By default provided
+2)Second Level caching(It is associated with Sessionfactory object.)-Need to enable manually,need to do configuration
