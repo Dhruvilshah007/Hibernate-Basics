@@ -35,7 +35,6 @@
     <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxDatatypes.Array"/>
     <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
-    <fullyQualifiedTypeName name="com.tut.ProjectWithMaven.Student"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.hibernate.query.NativeQuery"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -44,4 +43,5 @@
     <fullyQualifiedTypeName name="com.map.oneToMany.Comment"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="com.tut.ProjectWithMaven.Student"/>
 </qualifiedTypeNameHistroy>

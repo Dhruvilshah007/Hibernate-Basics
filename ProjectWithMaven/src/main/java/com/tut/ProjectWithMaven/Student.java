@@ -1,8 +1,12 @@
 package com.tut.ProjectWithMaven;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 //Here for entity student_details is used when using hql queries for eg-
 //Query query = entityManager.createQuery("SELECT s FROM student_details s WHERE s.age > 18");
@@ -10,8 +14,11 @@ import javax.persistence.Table;
 //@Entity(name = "student_details")
 //here only table name will be mystudents
 //@Table(name = "mystudents")
+//By default entity are not cacheable, so we need to add below annotations
 
 @Entity
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class Student {
 
 	@Id
