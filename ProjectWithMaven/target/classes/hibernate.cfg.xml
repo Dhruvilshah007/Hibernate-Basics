@@ -67,6 +67,10 @@
 
 		<mapping class="com.map.manyToMany.Emp" />
 		<mapping class="com.map.manyToMany.Project" />
+		
+		
+		<!-- Xml based mapping  -->
+		<mapping resource="com/map/xml/Person.hbm.xml" />
 
 
 
